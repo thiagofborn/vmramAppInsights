@@ -1,20 +1,20 @@
-# Enabling Alert via Memory RAM consumption Azure VM
+# Enabling Alert via RAM consumption (Azure VM - volatile memory)
 
-1. Enable Monitoring via Application Insights
-2. Create a query
+1. First we need to enable Monitoring via Application Insights
+2. Then we need to create a query to collected RAM metrics.
 
 ## Enable Monitoring via Application Insights
 
 Pre-requisite:
 The VM must be running to enable the Application Insights monitor agent.
 
-Go to the Azure Portal, and find the VM you want to enable the monitoring process via App Insights. 
+Go to the Azure Portal, and find the VM you want to enable the monitoring process via App Insights.
 
 Feel free to follow the picture.
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-001.jpg 'Common configuration')
 
-After you click on the **Enable** buttom, you need to pick the subscription and the **Log Analytics Work Space**. 
+After you click on the **Enable** buttom, you need to pick the subscription and the **Log Analytics Work Space**.
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-002.jpg 'Common configuration')
 
@@ -30,7 +30,6 @@ Then select **InsightsMetrics**:
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-004.jpg 'Common configuration')
 
-
 ## Create a query
 
 Available Memory in percentage:
@@ -43,6 +42,7 @@ InsightsMetrics
 | extend AvailableMemoryPercentage = (toreal(Val) / TotalMemory) * 100.0
 | summarize AggregatedValue = avg(AvailableMemoryPercentage) by bin(TimeGenerated, 15m), Computer, _ResourceId
 ```
+
 Paste the query for memory consumption:
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-005.jpg 'Common configuration')
