@@ -63,12 +63,13 @@ Then click **"Manage alert rules"**.
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-008.jpg 'Common configuration')
 
+Select the **Rule** you want to update 
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-009.jpg 'Common configuration')
 
+Click the **Condition** link, that will pop up on the left side, the query box and other things that can be changed as you wish.
 
 ![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-006.jpg 'Common configuration')
-
 
 ## References
 
