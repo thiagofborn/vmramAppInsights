@@ -53,6 +53,23 @@ Paste the query for memory consumption:
 
 Click on **+New alert rule**, and follow the instructions.
 
+## How to edit the query previously created
+
+First go to the Azure Portal and type **Alerts** in the search box.(It is at the top middle of the portal).
+
+![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-007.jpg 'Common configuration')
+
+Then click **"Manage alert rules"**.
+
+![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-008.jpg 'Common configuration')
+
+
+![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-009.jpg 'Common configuration')
+
+
+![To help find things. Please note that the Azure Portal may change in the future](media/enable-appInsights-006.jpg 'Common configuration')
+
+
 ## References
 
 1. Create a log Alert - <https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log>
