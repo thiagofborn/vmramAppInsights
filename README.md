@@ -1,4 +1,4 @@
-# Enabling Alert via RAM consumption (Azure VM - volatile memory)
+# Enabling Alert via RAM consumption (Azure VM - RAM)
 
 1. First we need to enable Monitoring via Application Insights
 2. Then we need to create a query to collected RAM metrics.
